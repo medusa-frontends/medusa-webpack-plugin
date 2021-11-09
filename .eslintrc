@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "@eslint-kit/patch",
+    "@eslint-kit/base",
+    "@eslint-kit/typescript",
+    "@eslint-kit/node",
+    "@eslint-kit/prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "no-console": "off",
+    "@typescript-eslint/consistent-type-definitions": ["warn", "type"]
+  }
+}

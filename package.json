@@ -1,13 +1,15 @@
 {
-  "name": "@mfe/webpac-plugin",
+  "name": "@mfe/webpack-plugin",
   "version": "0.0.0",
   "description": "An abstraction above ModuleFederation Webpack plugin",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:mfe-playground/mfe-webpack-plugin.git",
   "author": "Evgeny Zakharov <risenforces@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c rollup.config.js"
+    "build": "rollup -c rollup.config.js",
+    "dev": "rollup -c rollup.config.js -w"
   },
   "devDependencies": {
     "@eslint-kit/eslint-config-base": "^5.0.2",

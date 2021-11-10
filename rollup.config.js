@@ -1,4 +1,5 @@
 import { defineConfig } from 'rollup'
+import dts from 'rollup-plugin-dts'
 import esbuild from 'rollup-plugin-esbuild'
 import { terser } from 'rollup-plugin-terser'
 
@@ -16,6 +17,15 @@ const config = defineConfig([
       {
         file: `dist/index.js`,
         format: 'cjs',
+      },
+    ],
+  }),
+  bundle({
+    plugins: [dts()],
+    output: [
+      {
+        file: 'dist/index.d.ts',
+        format: 'es',
       },
     ],
   }),

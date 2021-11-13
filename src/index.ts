@@ -7,7 +7,7 @@ type ModuleFederationPluginOptions = ConstructorParameters<
   typeof container.ModuleFederationPlugin
 >[0]
 
-const PLUGIN_NAME = 'MFEPlugin'
+const PLUGIN_NAME = 'MedusaPlugin'
 
 const message = (text: string) => `[${PLUGIN_NAME}] ${text}`
 const log = (text: string) => console.log(text)
@@ -27,7 +27,7 @@ function readOptions(): ModuleFederationPluginOptions {
   return JSON.parse(buffer.toString())
 }
 
-export class MFEPlugin extends container.ModuleFederationPlugin {
+export class MedusaPlugin extends container.ModuleFederationPlugin {
   constructor() {
     const options = readOptions()
     super(options)

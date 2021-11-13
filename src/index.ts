@@ -21,7 +21,7 @@ function readOptions(): ModuleFederationPluginOptions {
   const packageJsonPath = finder(process.cwd()).next().filename
   if (!packageJsonPath) throw new Error('No package.json found')
   const appPath = packageJsonPath.slice(0, -'/package.json'.length)
-  const tempFolderPath = path.join(appPath, './.mfe')
+  const tempFolderPath = path.join(appPath, './.medusa')
   const pluginOptionsPath = path.join(tempFolderPath, './plugin-options.json')
   const buffer = fs.readFileSync(pluginOptionsPath)
   return JSON.parse(buffer.toString())

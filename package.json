@@ -1,15 +1,16 @@
 {
-  "name": "@medusa/webpack-plugin",
-  "version": "0.0.0",
+  "name": "@medusa-frontends/webpack-plugin",
+  "version": "1.0.0",
   "description": "An abstraction above ModuleFederation Webpack plugin",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "git@github.com:mfe-playground/medusa-webpack-plugin.git",
+  "repository": "git@github.com:medusa-frontends/medusa-webpack-plugin.git",
   "author": "Evgeny Zakharov <risenforces@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "dev": "rollup -c rollup.config.js -w"
+    "dev": "rollup -c rollup.config.js -w",
+    "lint": "eslint src/**/*.{ts,tsx} --fix"
   },
   "devDependencies": {
     "@eslint-kit/eslint-config-base": "^5.0.2",

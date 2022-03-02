@@ -1,5 +1,5 @@
 {
-  "name": "@medusa-frontends/webpack-plugin",
+  "name": "@medusa/webpack-plugin",
   "version": "1.0.0",
   "description": "An abstraction above ModuleFederation Webpack plugin",
   "main": "dist/index.js",

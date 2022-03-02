@@ -1,7 +1,7 @@
 # @medusa/webpack-plugin
 
 ```ts
-const { MedusaPlugin } = require('@medusa-frontends/webpack-plugin')
+const { MedusaPlugin } = require('@medusa/webpack-plugin')
 
 const config = {
   plugins: [
